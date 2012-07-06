@@ -6,15 +6,16 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'misquote.views.home', name='home'),
-    # url(r'^misquote/', include('misquote.foo.urls')),
-
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+	# Project Views
 	url(r'^$', MasterView.as_view(), name='Index')
+	
+	# Examples
+	# New named templates
+	# url(r'^alt/$', MarthaView.as_view(template_name="alt_index.html"), name='home-alt'),
 )
