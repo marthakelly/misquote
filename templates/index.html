@@ -2,20 +2,23 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>index</title>
-        <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <title>Don't Believe Everything You Read On The Internet</title>
+		<link href="{{ STATIC_URL }}/static/css/main.css" media="screen" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	
-	<h1>Hai this is a template thing.</h1>
-	<ul>
-		<li>{{ Author.author_name }}</li>
-	</ul>
-	<ul>
-		<li>{{ Quote.quote }}</li>
-	</ul>
+	<div class="container">
+		<ul class="one">
+			<li><p>{{ Quote.quote }}</p></li>
+		</ul>
+		<span class="tail"></span>
+		<ul class="two">
+			<li><p>{{ Author.author_name }}</p></li>
+		</ul>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ Quote.quote }} -{{ Author.author_name }}" data-hashtags="misquoted">Tweet</a>
+		<script>!function(d,s,id){var  js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
 
 </body>
 </html>

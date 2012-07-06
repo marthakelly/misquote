@@ -1,0 +1,20 @@
+body {
+	background: url('static/image/chalk.jpg');
+	color: #FFF;	
+}
+
+.one {
+	width: 500px;
+	margin: 25px;
+	padding: 50px;
+	background: purple;
+	display: inline-block;
+}
+
+.two {
+	width: 500px;
+	margin: 25px;
+	padding: 50px;
+	background: red;
+	display: inline-block;
+}
