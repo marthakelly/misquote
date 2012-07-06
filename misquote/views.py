@@ -7,5 +7,5 @@ from misquote.models import Quote
 
 def index(request):
 	t = get_template('index.html')
-	html = t.render(Context( {'Author' : Author.objects.all(), 'Quote' : Quote.objects.all() } ))
+	html = t.render(Context( {'Author' : Author.objects.all().order_by('?')[0], 'Quote' : Quote.objects.all().order_by('?')[0] } ))
 	return HttpResponse(html)
