@@ -1,6 +1,5 @@
+venv
 *.pyc
 *.log
 *.sqlite
 database.db
-local_settings.py
-/misquote/settings.py
