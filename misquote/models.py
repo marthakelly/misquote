@@ -7,7 +7,7 @@ class Author(models.Model):
 		return u'Author Name: %s' %(self.author_name)
 	
 class Quote(models.Model):
-	quote = models.CharField(max_length=100)
+	quote = models.CharField(max_length=200)
 	
 	def __unicode__(self):
 		return u'Quote: %s' %(self.quote)
