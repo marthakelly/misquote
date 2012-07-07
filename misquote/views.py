@@ -8,7 +8,7 @@ class MasterView(TemplateView):
 	
 	# update context dictionary with Author value and Quote value
 	def get_context_data(self, **kwargs):
-		context = super(MasterView, self).get_context_data(**kwargs)
+		#context = super(MasterView, self).get_context_data(**kwargs)
 		context["Author"] = Author.objects.all().order_by('?')[0]
 		context["Quote"] = Quote.objects.all().order_by('?')[0]
 		return context
