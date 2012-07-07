@@ -1,5 +1,5 @@
 body {
-	background: #F9F9F9;
+	background: #000 url('../img/chalk.jpg') repeat;
 	color: #333;
 	font-family: "Lobster", serif;
 }
@@ -32,6 +32,7 @@ li {
 }
 
 .two {
+	color: #FFF;
 	width: 500px;
 	padding: 0 25px 25px 25px;
 
